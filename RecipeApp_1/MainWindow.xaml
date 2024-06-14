@@ -1,0 +1,27 @@
+﻿<Window x:Class="RecipeApp_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/pancake.jpg"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF050505"/>
+        <Button Content="Add Recipe" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top" Width="94" Height="26" Background="#FF050505" Foreground="#FFF8F3F3" FontFamily="Arial Black" Click="Button_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="View Recipe" HorizontalAlignment="Left" Margin="524,4,0,0" VerticalAlignment="Top" Width="95" Height="26" Background="#FF050505" Foreground="#FFF8F3F3" FontFamily="Arial Black" Click="Button_Click_1"/>
+        <Button Content="Edit Recipe" HorizontalAlignment="Left" Margin="661,4,0,0" VerticalAlignment="Top" Width="99" Height="24" Background="#FF050505" Foreground="#FFF8F3F3" FontFamily="Arial Black" Click="Button_Click_2"/>
+        <Label Content="COOKING MADE  EASY" HorizontalAlignment="Left" Margin="23,113,0,0" VerticalAlignment="Top" Foreground="#FFF8F6F6" FontFamily="Segoe Script" FontSize="20"/>
+
+    </Grid>
+</Window>
